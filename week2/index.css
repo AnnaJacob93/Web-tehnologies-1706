@@ -1,0 +1,20 @@
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+
+/* Three types of css */
+
+/* 1. In text css
+2. Embedded
+3. External CSS */
+
+       /* Multiple selectors */
+    /* h1,h2{color:blueviolet} */
+    body{color:#5e1288; background-color:#FFD6E0 ;}
+    p{ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+    /* .para1{color:orangered} */
+    .para2{color:brown}
+    div{border-style: solid; background-color: rgb(171, 55, 167);color: #ded2e4;}
+ 
