@@ -1,0 +1,82 @@
+/* Content, Padding, Border, Margin */
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    color:white;
+}
+
+.container{ 
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    width: 80%;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+}
+
+    
+.content .logo{
+    width: 100px;
+    margin-top:50px;
+}
+.content hr {
+    border: none;
+    height:6px;
+    background-color: #cd7771;
+    max-width: 250px;
+}
+.content h1 {
+    font-size: 200px;
+    font-weight: 100;
+    colour: #cfcfcf;
+    letter-spacing:4px;
+    line-height: 150px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.content p{
+    max-width: 400px;
+    color: #cfcfcf;
+    font-size: 20px;
+    line-height: 20px;
+    }
+.menu{
+    width: 80px;
+    top:0;
+    right:0;
+    position:absolute;
+    cursor:pointer;
+
+}
+.sidebar{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+    top: 0;
+    left: 1px;
+    position: absolute;
+    max-width: 500px;
+    backdrop-filter: blur(10px);
+  
+}
+.content .button{
+    text-decoration: none;
+    color: #fff;
+    padding:20px 30 px;
+    margin-top: 20px;
+    border:1px solid black;
+    border-radius: 30px;
+}
+.content .button:hover{
+    border-color:#cd7771;
+    background: #cd7771;
+    color: black;
+    font-weight: 2;
+}
