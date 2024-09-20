@@ -1,0 +1,11 @@
+## Lesson 1: script tag, inspector's console and console.log
+#### What is JS? What is programming?
+
+How are we going to be using it? We will be using the console! Demo: where it is, console.log("Hello World!")
+
+To save and run code without having to type it out in the console, we use a JS file, in HTML.
+
+Script tag.
+
+Exercise 1: Create an html file and a javascript file. Link the JS file to the HTML file using the script tag. Check that there are no errors in the Console.
+Part 2: Put console.log("Hello world!") in the JS and check that it has worked using the console.

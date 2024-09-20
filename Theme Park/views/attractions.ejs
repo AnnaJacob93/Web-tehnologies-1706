@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Attractions</title>
+ <link rel="stylesheet" href="/css/styles.css">
+ 
+</head>
+<body class="attractions-page">
+ <header>
+  <div class="container">
+    <img src="images/logo.webp" alt="Adventure Awaits: Magic Theme Park Logo" class="logo">
+   
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/areas">Areas</a></li>
+            <li><a href="/attractions">Attractions</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+</div>
+</header>
+<main>
+    <section id="main-attractions" class="section">
+        <h1 class="attractions-title">Rides and Attractions</h1>
+        
+        <!-- Fairy Kingdom Section -->
+        <section id="fairy-kingdom">
+            <h2>Fairy Kingdom</h2>
+            <div class="attractions-grid">
+                <div class="attraction">
+                    <img src="images/weels.jpg" alt="Ferris Wheel">
+                    <h3>The Ferris Wheel</h3>
+                    <p>Enjoy breathtaking views of the magical kingdom as you soar high above the treetops. This classic Ferris Wheel offers a tranquil and enchanting experience for visitors of all ages.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/spinningcup.jpg" alt="Spinning Cups">
+                    <h3>Spinning Cups</h3>
+                    <p>Spin endlessly in this whimsical adventure, where you control the speed! Perfect for families, the Spinning Cups offer a dizzying mix of fun and laughter in a fairytale setting.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/swingrides.jpg" alt="Swing Ride">
+                    <h3>Swing Ride</h3>
+                    <p>Feel the thrill of an open-air ride as you swing amidst the enchanting surroundings of the kingdom. The gentle breeze and stunning views will make this a memorable experience for everyone.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Viking Land Section -->
+        <section id="viking-land">
+            <h2>Viking Land</h2>
+            <div class="attractions-grid">
+                <div class="attraction">
+                    <img src="images/vikingbattle.webp" alt="Viking Battle">
+                    <h3>Viking Battle</h3>
+                    <p>Experience an epic journey in this interactive Viking action game. Pick up your shield and sword, and immerse yourself in an adrenaline-pumping battle to defend your Viking clan!</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/rollercoaster.jpg" alt="Viking Rollercoaster">
+                    <h3>Viking Rollercoaster</h3>
+                    <p>A thrilling rollercoaster ride inspired by Viking myths! Feel the rush as you navigate sharp turns, steep drops, and breathtaking loops in this exhilarating journey through Viking history.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/axe-throwing.jpg" alt="Axe Throwing">
+                    <h3>Axe Throwing</h3>
+                    <p>Test your skills in an exciting Viking axe-throwing challenge! Learn the ancient art of axe-throwing with our expert guides in a fun and safe environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pirate Town Section -->
+        <section id="pirate-town">
+            <h2>Pirate Town</h2>
+            <div class="attractions-grid">
+                <div class="attraction">
+                    <img src="images/bumpercar.jpg" alt="Bumper Cars">
+                    <h3>Bumper Cars</h3>
+                    <p>Navigate through pirate alleys in these fun bumper cars! Prepare for laughter and excitement as you try to dodge your friends and bump them off course in this wild pirate adventure.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/pirateship.jpg" alt="Pirate Ship">
+                    <h3>Pirate Ship</h3>
+                    <p>Embark on an unforgettable adventure aboard the pirate ship! Feel the ship sway as if on high seas while you brave the towering waves and imagine a life of piracy.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/treasure-hunt.jpg" alt="Treasure Hunt">
+                    <h3>Treasure Hunt</h3>
+                    <p>Join a thrilling hunt for hidden treasures in Pirate Town! Follow the cryptic clues and solve puzzles as you explore the nooks and crannies of the town in search of the legendary pirate treasure.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sci-Fi Universe Section -->
+        <section id="sci-fi-universe">
+            <h2>Sci-Fi Universe</h2>
+            <div class="attractions-grid">
+                <div class="attraction">
+                    <img src="images/galacticexplorer.webp" alt="Galactic Explorer">
+                    <h3>Galactic Explorer</h3>
+                    <p>Board a virtual spaceship and explore the mysteries of the galaxy! Experience a thrilling journey through space, encountering alien worlds, asteroid fields, and breathtaking cosmic phenomena.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/virtual-reality.jpg" alt="Virtual Reality Zone">
+                    <h3>Virtual Reality Zone</h3>
+                    <p>Immerse yourself in a futuristic VR experience! Put on the VR headset and enter a world of infinite possibilities, where you can explore distant planets, engage in epic space battles, or solve mind-bending puzzles.</p>
+                </div>
+                <div class="attraction">
+                    <img src="images/laser-tag.jpg" alt="Laser Tag">
+                    <h3>Laser Tag</h3>
+                    <p>Engage in an epic space-themed laser tag battle! Navigate the neon-lit arena, take cover behind futuristic obstacles, and aim for victory in this fast-paced, action-packed game.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+</main>
+
+ <ul>
+ <% attractions.forEach(attraction => { %>
+ <li>
+ <h3><%= attraction.name %></h3>
+ <p><%= attraction.description %></p>
+ </li>
+ <% }); %>
+ </ul>
+ </section>
+ </main>
+ <footer>
+    <p>© 2024 Adventure Awaits: Magic Theme Park. All rights reserved.</p>
+</footer>   
+<script src="/js/script.js"></script>
+</body>
+</html>
